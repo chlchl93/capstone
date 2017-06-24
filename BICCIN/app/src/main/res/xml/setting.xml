@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+    <CheckBoxPreference
+
+        android:defaultValue="true"
+
+        android:key="accident"
+
+        android:title="사고 다발지역 표시"
+
+        android:summaryOn="표시 함"
+
+        android:summaryOff="표시 안함" />
+
+    <CheckBoxPreference
+
+        android:defaultValue="true"
+
+        android:key="accident_alarm"
+
+        android:title="사고 다발지역 알람"
+
+        android:summaryOn="켜짐"
+
+        android:summaryOff="꺼짐" />
+
+    <CheckBoxPreference
+
+        android:defaultValue="true"
+
+        android:key="robber"
+
+        android:title="자전거 도난 경보"
+
+        android:summaryOn="켜짐"
+
+        android:summaryOff="꺼짐" />
+
+
+
+</PreferenceScreen>

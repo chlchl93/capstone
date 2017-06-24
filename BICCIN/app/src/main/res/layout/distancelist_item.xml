@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+    <TextView
+    android:id="@+id/starttime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textSize="10dp"
+    android:text="시작:"
+    android:textColor="@color/black"
+    />
+
+    <TextView
+        android:id="@+id/main_starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/starttime"
+        android:layout_marginLeft="10dp"/>
+
+
+    <TextView
+    android:id="@+id/endtime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_below="@id/starttime"
+    android:textSize="10dp"
+    android:text="종료:"
+    android:textColor="@color/black"
+    android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/main_endtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/starttime"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/endtime"
+        android:layout_marginLeft="10dp"/>
+
+
+    <!--거리-->
+    <TextView
+    android:id="@+id/distance"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textSize="30dp"
+    android:textColor="@color/colorAccent"
+    android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "204681286768",
+    "firebase_url": "https://myapplicationtaas-2-1-2-1.firebaseio.com",
+    "project_id": "myapplicationtaas-2-1-2-1",
+    "storage_bucket": "myapplicationtaas-2-1-2-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204681286768:android:7aa83a073be7f5c9",
+        "android_client_info": {
+          "package_name": "com.example.leejaeyun.bikenavi2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204681286768-npimctmgovap8lle75bs5jccskdp7et5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.leejaeyun.bikenavi2",
+            "certificate_hash": "e0d4571d7a2d8075519d9196ed5e85c751579ca0"
+          }
+        },
+        {
+          "client_id": "204681286768-ap44qe6d1mq43sbk15q4gm5u3ur6o39r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5JuNqjt76Hr4sfwxB-raSyqAI4Gl_CI4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204681286768-ap44qe6d1mq43sbk15q4gm5u3ur6o39r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

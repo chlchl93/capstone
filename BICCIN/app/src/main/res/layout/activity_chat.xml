@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.leejaeyun.bikenavi2.ChatActivity">
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#97caf1"
+        android:text="종료"
+        android:textColor="@color/black"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:background="#cb6ca7ee"
+        android:scrollbars="vertical"
+
+        android:layout_below="@+id/btnFinish"
+        android:layout_above="@+id/etText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/white"
+
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/btnSend"
+        android:id="@+id/etText" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#97caf1"
+        android:text="전송"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

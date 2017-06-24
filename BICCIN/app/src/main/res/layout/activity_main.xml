@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bicycle2"
+    >
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="470dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tvHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="B  I  C  C   I   N"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:background="@drawable/line2"
+            android:hint="EMAIL"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/tvHello"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/etEmail"
+            android:layout_marginBottom="170dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/line2"
+            android:hint="Password"
+            android:password="true" />
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10000dp"
+           android:layout_toRightOf="@+id/etEmail"
+            android:layout_below="@+id/tvHello"
+            android:backgroundTint="#85d0f8"
+            android:text="로그인"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="42dp"
+
+            android:backgroundTint="#85d0f8"
+
+            android:text="회원가입" />
+
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/btnRegister"
+            android:layout_alignTop="@+id/btnRegister"
+
+            android:layout_marginLeft="25dp"
+            android:layout_toEndOf="@+id/btnRegister"
+            android:layout_toRightOf="@+id/btnRegister"
+            android:backgroundTint="#85d0f8"
+            android:text="종료"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pbLogin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

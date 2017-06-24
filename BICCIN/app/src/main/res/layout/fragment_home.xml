@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.leejaeyun.bikenavi2.NaviActivity"
+    android:clickable="true"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation = "vertical"
+        android:id="@+id/main_map_container"
+        >
+
+        <FrameLayout
+            android:id="@+id/mapLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/backpress"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="vertical">
+
+            <!--현위치-->
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_nowLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/current_place"
+                app:backgroundTint="@color/orange"
+                app:fabSize="mini"/>
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_findroad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/mini_bike"
+                app:backgroundTint="@color/orange"
+                app:fabSize="mini" />
+
+
+            <!--경로 취소-->
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_deletePath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/map_clear"
+                app:backgroundTint="@color/orange"
+                app:fabSize="mini"/>
+
+            <!--주변탐색 켜기-->
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/bt_findfac_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/find_road"
+                android:layout_marginTop="150dp"
+                app:backgroundTint="@color/white"
+                app:fabSize="mini"/>
+
+
+            <!--주변탐색 끄기-->
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/bt_findfac_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/find_road"
+                android:layout_marginTop="150dp"
+                android:visibility="invisible"
+                app:backgroundTint="@color/orange"
+                app:fabSize="mini"/>
+
+            <!--트래킹 켜기-->
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/tracking_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/traking_off"
+                android:layout_marginTop="200dp"
+                app:backgroundTint="@color/white"
+                app:fabSize="mini"/>
+            <!--트래킹 끄기-->
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/tracking_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/traking_on"
+                android:layout_marginTop="200dp"
+                android:visibility="invisible"
+                app:backgroundTint="@color/orange"
+                app:fabSize="mini"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/main_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00km"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="10dp"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8">
+        <include layout="@layout/main_weather"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

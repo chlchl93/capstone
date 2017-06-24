@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_weather"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_below="@+id/main_map_container"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/main_weather_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/w38"/>
+    <TextView
+        android:id="@+id/main_weather_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="- \u00b0"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/main_weather_icon" />
+    <ImageView
+        android:id="@+id/main_weather_temp_line"
+        android:layout_toRightOf="@id/main_weather_temp"
+        android:layout_width="1dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/grey" />
+    <!--풍향-->
+    <ImageView
+        android:id="@+id/main_weather_wind_dir"
+        android:src="@drawable/wind_dir"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/main_weather_temp_line"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"/>
+    <!--풍속-->
+    <TextView
+        android:id="@+id/main_weather_wind_spd"
+        android:layout_below="@+id/main_weather_wind_dir"
+        android:layout_toRightOf="@id/main_weather_temp_line"
+        android:layout_marginLeft="10dp"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:textSize="12dp" />
+    <ImageView
+        android:id="@+id/main_weather_wind_line"
+        android:layout_toRightOf="@id/main_weather_wind_spd"
+        android:layout_width="1dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/grey" />
+    <RelativeLayout
+        android:layout_toRightOf="@id/main_weather_wind_line"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/main_weather_uv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="자외선 : "
+            android:textSize="13dp"
+            android:textColor="@color/black"/>
+        <!--자외선 값-->
+        <TextView
+            android:id="@+id/main_weather_uv_power"
+            android:layout_toRightOf="@id/main_weather_uv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="13dp"
+            android:layout_marginLeft="15dp" />
+        <!--자외선 등급-->
+        <TextView
+            android:id="@+id/main_weather_uv_grade"
+            android:layout_toRightOf="@+id/main_weather_uv_power"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="13dp"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:id="@+id/main_weather_dust"
+            android:layout_below="@+id/main_weather_uv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="미세먼지 : "
+            android:textSize="13dp"
+            android:textColor="@color/black"/>
+        <!--미세먼지 값-->
+        <TextView
+            android:id="@+id/main_weather_dust_power"
+            android:layout_below="@+id/main_weather_uv_power"
+            android:layout_toRightOf="@id/main_weather_uv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="13dp"
+            android:layout_marginLeft="15dp" />
+        <!--미세먼지 등급-->
+        <TextView
+            android:id="@+id/main_weather_dust_grade"
+            android:layout_below="@+id/main_weather_uv_grade"
+            android:layout_toRightOf="@+id/main_weather_uv_power"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="13dp"
+            android:layout_marginLeft="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/main_weather_dust_grade"
+            android:layout_marginLeft="3dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/totalDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_toRightOf="@+id/main_weather_uv_grade"
+                android:text="주행거리 "
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/main_totalDistance"
+                android:layout_below="@+id/totalDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
